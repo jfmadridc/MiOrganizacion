@@ -1,5 +1,5 @@
 import "./Formulario.css";
-import CampoTexto from "../CampoTexto/CampoTexto";
+import CampoTexto from "../CampoTexto/CampoTexto.js";
 
 const Formulario = () => {
 	return (
@@ -7,6 +7,9 @@ const Formulario = () => {
 			<form>
 				<h2>Rellena el formulario para crear el colaborador.</h2>
 				<CampoTexto />
+				<CampoTexto />
+				<CampoTexto />
+				
 			</form>
 		</section>
 	);
