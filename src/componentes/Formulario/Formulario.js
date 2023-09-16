@@ -1,5 +1,7 @@
 import "./Formulario.css";
 import CampoTexto from "../CampoTexto/CampoTexto.js";
+import ListaOpciones from "../ListaOpciones/ListaOpciones.js";
+import Boton from "../Boton/Boton.js";
 
 const Formulario = () => {
 	return (
@@ -9,6 +11,9 @@ const Formulario = () => {
 				<CampoTexto titulo="Nombre" placeholder="Ingrese el nombre" />
 				<CampoTexto titulo="Puesto" placeholder="Ingrese el puesto" />
 				<CampoTexto titulo="Foto" placeholder="Seleccione la foto" />
+				<ListaOpciones />
+				<Boton texto="Crear" />
+
 			</form>
 		</section>
 	);
