@@ -12,12 +12,14 @@ function App() {
 		actualizarMostrar(!mostrarFormulario);
 	};
 
-	//ternario condicion ? ifTrue : ifFalse
 	return (
 		<div>
 			<Header />
-			{mostrarFormulario === true ? <Formulario /> : null}
+			{/* tambien se puede usar: */}
+			{/* {mostrarFormulario && <Formulario />} */}
 
+			{/* //ternario condicion ? ifTrue : ifFalse */}
+			{mostrarFormulario ? <Formulario /> : <></>}
 			<MiOrg switchMostrar={cambiarMostrar} />
 		</div>
 	);
