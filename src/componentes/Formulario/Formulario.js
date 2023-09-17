@@ -11,7 +11,13 @@ const Formulario = () => {
 
 	const manejarEnvio = (e) => {
 		e.preventDefault();
-		//console.log(e);
+
+		const datosParaEnviar = {
+			nombre,
+			puesto,
+			foto,
+		};
+		//console.log(datosParaEnviar);
 	};
 
 	return (
