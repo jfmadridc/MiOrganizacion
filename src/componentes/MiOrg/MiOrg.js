@@ -1,17 +1,7 @@
-import "./MiOrg.css";
 import { useState } from "react";
+import "./MiOrg.css";
 
-const MiOrg = () => {
-	//Estado - Hooks
-	//useState
-	//useState()
-	//const [nombreVariable, FuncionQueActualiza] = useState(valorInicial)
-	const [mostrar, actualizarMostrar] = useState(true);
-
-	const manejarClick = () => {
-		actualizarMostrar(!mostrar);
-	};
-
+const MiOrg = (props) => {
 	return (
 		<div className="div-org">
 			<section className="orgSection">
@@ -20,7 +10,7 @@ const MiOrg = () => {
 				<img
 					src="/img/add.png"
 					alt="boton add"
-					onClick={manejarClick}
+					onClick={props.switchMostrar}
 				/>
 			</section>
 		</div>
