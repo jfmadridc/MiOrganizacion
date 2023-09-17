@@ -11,6 +11,13 @@
 	color: #ffffff;
 }
 
-.boton:hover{
-	color: #95FFD4;
+.boton:hover {
+	color: #95ffd4;
+}
+
+@media screen and (max-width: 900px) {
+	.boton {
+		font-size: 16px;
+		padding: 21px 24px;
+	}
 }

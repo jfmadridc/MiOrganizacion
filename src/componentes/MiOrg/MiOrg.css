@@ -4,7 +4,8 @@
 }
 
 .orgSection {
-	width: 60%;
+	width: 70%;
+	max-width: 950px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -29,4 +30,18 @@
 }
 .orgSection img:last-child {
 	margin-left: auto;
+}
+
+@media screen and (max-width: 900px) {
+	.orgSection {
+		width: 95%;
+	}
+
+	.title {
+		font-size: 20px;
+		padding: 0 0 12px;
+	}
+	.orgSection img {
+		width: 60px;
+	}
 }
