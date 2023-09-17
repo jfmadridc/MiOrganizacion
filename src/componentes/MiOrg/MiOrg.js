@@ -1,8 +1,15 @@
 import "./MiOrg.css";
+import { useState } from "react";
 
 const MiOrg = () => {
+	//Estado - Hooks
+	//useState
+	//useState()
+	//const [nombreVariable, FuncionQueActualiza] = useState(valorInicial)
+	const [mostrar, actualizarMostrar] = useState(true);
+
 	const manejarClick = () => {
-		console.log("Mostrar/Ocultar elemento");
+		actualizarMostrar(!mostrar);
 	};
 
 	return (
