@@ -5,7 +5,7 @@ const ListaOpciones = (props) => {
 	//	return <option><option/>
 	//})
 	const equipos = [
-		"Programacion",
+		"Programación",
 		"Front End",
 		"Data Science",
 		"Devops",
