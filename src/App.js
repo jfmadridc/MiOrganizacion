@@ -59,7 +59,11 @@ function App() {
 			{/* {mostrarFormulario && <Formulario />} */}
 
 			{/* //ternario condicion ? ifTrue : ifFalse */}
-			{mostrarFormulario ? <Formulario /> : <></>}
+			{mostrarFormulario ? (
+				<Formulario equipos={equipos.map((equipo) => equipo.titulo)} />
+			) : (
+				<></>
+			)}
 			<MiOrg switchMostrar={cambiarMostrar} />
 
 			{equipos.map((equipo) => {

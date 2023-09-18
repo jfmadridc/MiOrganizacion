@@ -4,7 +4,7 @@ import ListaOpciones from "../ListaOpciones/ListaOpciones.js";
 import Boton from "../Boton/Boton.js";
 import { useState } from "react";
 
-const Formulario = () => {
+const Formulario = (props) => {
 	const [nombre, actualizarNombre] = useState("");
 	const [puesto, actualizarPuesto] = useState("");
 	const [foto, actualizarFoto] = useState("");
@@ -13,13 +13,12 @@ const Formulario = () => {
 	const manejarEnvio = (e) => {
 		e.preventDefault();
 
-		const datosParaEnviar = {
-			nombre,
-			puesto,
-			foto,
-			equipo,
-		};
-		console.log(datosParaEnviar);
+		// const datosParaEnviar = {
+		// 	nombre,
+		// 	puesto,
+		// 	foto,
+		// 	equipo,
+		// };
 	};
 
 	return (
@@ -48,7 +47,11 @@ const Formulario = () => {
 					setValor={actualizarFoto}
 				/>
 
-				<ListaOpciones valor={equipo} setValor={actualizarEquipo} />
+				<ListaOpciones
+					valor={equipo}
+					setValor={actualizarEquipo}
+					equipos={props.equipos}
+				/>
 
 				<Boton>Crear</Boton>
 			</form>
