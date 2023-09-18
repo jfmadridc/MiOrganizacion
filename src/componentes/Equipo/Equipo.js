@@ -1,20 +1,23 @@
 import "./Equipo.css";
 
 const Equipo = (props) => {
+	//destructuracion
+	const { titulo, colorFondo, colorDestaques } = props.datos;
+
 	return (
 		<div
 			className="div-equipo"
 			style={{
-				backgroundColor: props.datos.colorFondo,
+				backgroundColor: colorFondo,
 			}}
 		>
 			<section className="equipo">
 				<h3
 					style={{
-						borderColor: props.datos.colorDestaques,
+						borderColor: colorDestaques,
 					}}
 				>
-					{props.datos.titulo}
+					{titulo}
 				</h3>
 				<div className="colaboradores"></div>
 			</section>
