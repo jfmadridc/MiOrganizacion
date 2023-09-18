@@ -1,12 +1,10 @@
 .div-equipo {
-	background-color: #d9f7e9;
 	display: flex;
 	justify-content: center;
 }
 
 .equipo {
 	width: 70%;
-	background-color: #d9f7e9;
 	display: flex;
 	justify-content: center;
 }
@@ -16,7 +14,7 @@
 	font-size: 32px;
 	font-weight: 400;
 	color: #212121;
-	border-bottom: 4px solid #57c278;
+	border-bottom: 4px solid;
 	padding-bottom: 10px;
 }
 

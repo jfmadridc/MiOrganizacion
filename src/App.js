@@ -13,6 +13,45 @@ function App() {
 		actualizarMostrar(!mostrarFormulario);
 	};
 
+	//lista de Equipos
+	const equipos = [
+		{
+			titulo: "Programación",
+			colorFondo: "#D9F7E9",
+			colorDestaques: "#57C278",
+		},
+		{
+			titulo: "Front End",
+			colorFondo: "#E8F8FF",
+			colorDestaques: "#82CFFA",
+		},
+		{
+			titulo: "Data Science",
+			colorFondo: "#F0F8E2",
+			colorDestaques: "#A6D157",
+		},
+		{
+			titulo: "Devops",
+			colorFondo: "#FBD3D4",
+			colorDestaques: "#E06B69",
+		},
+		{
+			titulo: "UX y Diseño",
+			colorFondo: "#F6D7ED",
+			colorDestaques: "#DB6EBF",
+		},
+		{
+			titulo: "Móvil",
+			colorFondo: "#FFECBA",
+			colorDestaques: "#FFBA05",
+		},
+		{
+			titulo: "Innovacion y Gestión",
+			colorFondo: "#FFDFC4",
+			colorDestaques: "#FF8A29",
+		},
+	];
+
 	return (
 		<div>
 			<Header />
@@ -22,13 +61,10 @@ function App() {
 			{/* //ternario condicion ? ifTrue : ifFalse */}
 			{mostrarFormulario ? <Formulario /> : <></>}
 			<MiOrg switchMostrar={cambiarMostrar} />
-			<Equipo equipo="Programación" />
-			<Equipo equipo="Front End" />
-			<Equipo equipo="Data Science" />
-			<Equipo equipo="Devops" />
-			<Equipo equipo="UX y Diseño" />
-			<Equipo equipo="Movil" />
-			<Equipo equipo="Innovacion y Gestion" />
+
+			{equipos.map((equipo) => {
+				return <Equipo datos={equipo} key={equipo.titulo} />;
+			})}
 		</div>
 	);
 }
