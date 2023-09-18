@@ -4,9 +4,10 @@
 }
 
 .equipo {
-	width: 70%;
+	width: 100%;
+	max-width: 1120px;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
 }
 
 .equipo h3 {
@@ -16,6 +17,13 @@
 	color: #212121;
 	border-bottom: 4px solid;
 	padding-bottom: 10px;
+	align-self: center;
+}
+
+.colaboradores {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 @media screen and (max-width: 900px) {
@@ -23,6 +31,6 @@
 		width: 95%;
 	}
 	.equipo h3 {
-		font-size: 16px;
+		font-size: 20px;
 	}
 }

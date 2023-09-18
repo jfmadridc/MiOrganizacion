@@ -26,3 +26,19 @@
 .campo-texto input::placeholder {
 	color: #a4a4a4;
 }
+
+@media screen and (max-width: 900px) {
+	.campo-texto {
+		margin: 12px 0;
+	}
+
+	.campo-texto label {
+		font-size: 14px;
+		margin-bottom: 6px;
+	}
+
+	.campo-texto input {
+		font-size: 14px;
+		padding: 20px 10px;
+	}
+}

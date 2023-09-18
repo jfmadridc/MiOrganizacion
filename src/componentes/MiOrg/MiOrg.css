@@ -1,11 +1,12 @@
 .div-org {
 	display: flex;
 	justify-content: center;
+	margin: 0 50px;
 }
 
 .orgSection {
-	width: 70%;
-	max-width: 950px;
+	width: 100%;
+	max-width: 1120px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -33,12 +34,16 @@
 }
 
 @media screen and (max-width: 900px) {
+	.div-org {
+		margin: 0;
+	}
+
 	.orgSection {
 		width: 95%;
 	}
 
 	.title {
-		font-size: 20px;
+		font-size: 25px;
 		padding: 0 0 12px;
 	}
 	.orgSection img {

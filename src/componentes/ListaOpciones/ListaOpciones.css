@@ -23,3 +23,17 @@
 	color: #212121;
 }
 
+@media screen and (max-width: 900px) {
+	.lista-opciones {
+		margin: 12px 0 0;
+	}
+
+	.lista-opciones label {
+		font-size: 14px;
+	}
+
+	.lista-opciones select {
+		font-size: 14px;
+		padding: 20px 10px;
+	}
+}

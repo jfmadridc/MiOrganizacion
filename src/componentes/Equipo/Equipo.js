@@ -1,4 +1,5 @@
 import "./Equipo.css";
+import Colaborador from "../Colaborador/Colaborador";
 
 const Equipo = (props) => {
 	//destructuracion
@@ -8,7 +9,11 @@ const Equipo = (props) => {
 		<div className="div-equipo" style={{ backgroundColor: colorFondo }}>
 			<section className="equipo">
 				<h3 style={{ borderColor: colorDestaques }}>{titulo}</h3>
-				<div className="colaboradores"></div>
+				<div className="colaboradores">
+					<Colaborador cargo="Desarrolladora de software e instructora" />
+					<Colaborador cargo="Dev. FullStack" />
+					<Colaborador cargo="Full Stack Developer" />
+				</div>
 			</section>
 		</div>
 	);
