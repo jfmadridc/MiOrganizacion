@@ -5,20 +5,9 @@ const Equipo = (props) => {
 	const { titulo, colorFondo, colorDestaques } = props.datos;
 
 	return (
-		<div
-			className="div-equipo"
-			style={{
-				backgroundColor: colorFondo,
-			}}
-		>
+		<div className="div-equipo" style={{ backgroundColor: colorFondo }}>
 			<section className="equipo">
-				<h3
-					style={{
-						borderColor: colorDestaques,
-					}}
-				>
-					{titulo}
-				</h3>
+				<h3 style={{ borderColor: colorDestaques }}>{titulo}</h3>
 				<div className="colaboradores"></div>
 			</section>
 		</div>
