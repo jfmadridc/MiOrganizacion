@@ -7,10 +7,20 @@ import MiOrg from "./componentes/MiOrg/MiOrg";
 import Equipo from "./componentes/Equipo/Equipo";
 
 function App() {
-	const [mostrarFormulario, actualizarMostrar] = useState(false);
+	// States/hooks
+	const [mostrarFormulario, actualizarMostrar] = useState(false); //un state de true or false
+	const [colaboradores, actualizarColaboradores] = useState([]); //un state que es un arreglo
 
+	//lo que hace que muestre o oculte el formulario con el click en el boton
 	const cambiarMostrar = () => {
-		actualizarMostrar(!mostrarFormulario);
+		actualizarMostrar(!mostrarFormulario); //cambia de true a false y de false a tue
+	};
+
+	//Registrar colaborador
+	const registrarColaborador = (colaborador) => {
+		console.log("App.js Nuevo Col:", colaborador);
+		//guardamos el objeto con Spread operator
+		actualizarColaboradores([...colaboradores, colaborador]); //es una copia del arreglo y le añade colaborador
 	};
 
 	//lista de Equipos
@@ -58,9 +68,11 @@ function App() {
 			{/* tambien se puede usar: */}
 			{/* {mostrarFormulario && <Formulario />} */}
 
-			{/* //ternario condicion ? ifTrue : ifFalse */}
 			{mostrarFormulario ? (
-				<Formulario equipos={equipos.map((equipo) => equipo.titulo)} />
+				<Formulario
+					equipos={equipos.map((equipo) => equipo.titulo)}
+					registrarColaborador={registrarColaborador}
+				/>
 			) : (
 				<></>
 			)}

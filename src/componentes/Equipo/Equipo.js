@@ -13,6 +13,7 @@ const Equipo = (props) => {
 					<Colaborador cargo="Desarrolladora de software e instructora" />
 					<Colaborador cargo="Dev. FullStack" />
 					<Colaborador cargo="Full Stack Developer" />
+					<Colaborador cargo="Full Stack Developer" />
 				</div>
 			</section>
 		</div>
