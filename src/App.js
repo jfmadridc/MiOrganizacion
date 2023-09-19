@@ -78,9 +78,13 @@ function App() {
 			)}
 			<MiOrg switchMostrar={cambiarMostrar} />
 
-			{equipos.map((equipo) => {
-				return <Equipo datos={equipo} key={equipo.titulo} />;
-			})}
+			{equipos.map((equipo) => (
+				<Equipo
+					datosEquipo={equipo}
+					key={equipo.titulo}
+					colaboradores={colaboradores}
+				/>
+			))}
 		</div>
 	);
 }
