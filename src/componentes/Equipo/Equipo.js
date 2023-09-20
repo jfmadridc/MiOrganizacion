@@ -7,16 +7,28 @@ const Equipo = (props) => {
 	const { colaboradores } = props;
 
 	return (
-		<div className="div-equipo" style={{ backgroundColor: colorFondo }}>
-			<section className="equipo">
-				<h3 style={{ borderColor: colorDestaques }}>{titulo}</h3>
-				<div className="colaboradores">
-					{colaboradores.map((colaborador, index) => (
-						<Colaborador datosCola={colaborador} key={index} />
-					))}
+		<>
+			{colaboradores.length > 0 && (
+				<div
+					className="div-equipo"
+					style={{ backgroundColor: colorFondo }}
+				>
+					<section className="equipo">
+						<h3 style={{ borderColor: colorDestaques }}>
+							{titulo}
+						</h3>
+						<div className="colaboradores">
+							{colaboradores.map((colaborador, index) => (
+								<Colaborador
+									datosCola={colaborador}
+									key={index}
+								/>
+							))}
+						</div>
+					</section>
 				</div>
-			</section>
-		</div>
+			)}
+		</>
 	);
 };
 
