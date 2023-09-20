@@ -22,6 +22,7 @@ const Equipo = (props) => {
 								<Colaborador
 									datosCola={colaborador}
 									key={index}
+									colDestaques={colorDestaques}
 								/>
 							))}
 						</div>
