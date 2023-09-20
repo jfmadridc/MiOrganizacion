@@ -1,0 +1,11 @@
+.div-app {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
+}
+
+.div-app .div-org {
+	margin-top: 0;
+	margin-bottom: auto;
+}

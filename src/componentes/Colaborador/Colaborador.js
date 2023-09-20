@@ -1,7 +1,7 @@
 import "./Colaborador.css";
 
 const Colaborador = (props) => {
-	const { nombre, puesto, foto, equipo } = props.datosCola;
+	const { nombre, puesto, foto } = props.datosCola;
 	const colorEncabezado = props.colDestaques;
 	return (
 		<div className="colaborador">

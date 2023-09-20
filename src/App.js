@@ -5,7 +5,7 @@ import Header from "./componentes/Header/Header";
 import Formulario from "./componentes/Formulario/Formulario";
 import MiOrg from "./componentes/MiOrg/MiOrg";
 import Equipo from "./componentes/Equipo/Equipo";
-
+import Footer from "./componentes/Footer/Footer";
 function App() {
 	// States/hooks
 	const [mostrarFormulario, actualizarMostrar] = useState(false); //un state de true or false
@@ -62,7 +62,7 @@ function App() {
 	];
 
 	return (
-		<div>
+		<div className="div-app">
 			<Header />
 			{/* tambien se puede usar: */}
 			{/* {mostrarFormulario && <Formulario />} */}
@@ -86,6 +86,8 @@ function App() {
 					)}
 				/>
 			))}
+
+			<Footer />
 		</div>
 	);
 }

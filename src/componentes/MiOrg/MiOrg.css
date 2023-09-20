@@ -8,7 +8,7 @@
 	width: 100%;
 	max-width: 1120px;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 }
 
@@ -26,11 +26,7 @@
 }
 
 .orgSection img:first-child {
-	margin-right: auto;
 	visibility: hidden;
-}
-.orgSection img:last-child {
-	margin-left: auto;
 }
 
 @media screen and (max-width: 900px) {
