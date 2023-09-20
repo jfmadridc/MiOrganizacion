@@ -18,7 +18,6 @@ function App() {
 
 	//Registrar colaborador
 	const registrarColaborador = (colaborador) => {
-		console.log("App.js Nuevo Col:", colaborador);
 		//guardamos el objeto con Spread operator
 		actualizarColaboradores([...colaboradores, colaborador]); //es una copia del arreglo y le añade colaborador
 	};

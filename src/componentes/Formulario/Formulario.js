@@ -19,8 +19,12 @@ const Formulario = (props) => {
 			foto,
 			equipo,
 		};
-
 		props.registrarColaborador(datosParaEnviar);
+		// Reset the state of the input fields
+		actualizarNombre("");
+		actualizarPuesto("");
+		actualizarFoto("");
+		actualizarEquipo("");
 	};
 
 	return (
