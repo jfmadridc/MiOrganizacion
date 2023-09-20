@@ -67,6 +67,8 @@ function App() {
 			{/* tambien se puede usar: */}
 			{/* {mostrarFormulario && <Formulario />} */}
 
+			<MiOrg switchMostrar={cambiarMostrar} />
+
 			{mostrarFormulario ? (
 				<Formulario
 					equipos={equipos.map((equipo) => equipo.titulo)}
@@ -75,7 +77,6 @@ function App() {
 			) : (
 				<></>
 			)}
-			<MiOrg switchMostrar={cambiarMostrar} />
 
 			{equipos.map((equipo) => (
 				<Equipo

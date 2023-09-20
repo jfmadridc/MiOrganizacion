@@ -1,7 +1,6 @@
 .div-org {
 	display: flex;
 	justify-content: center;
-	margin: 0 50px;
 }
 
 .orgSection {
@@ -10,14 +9,16 @@
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	margin: 10px 0;
 }
 
 .title {
 	font-family: "Prata", serif;
+	margin: 0;
 	font-size: 40px;
 	font-weight: 400;
 	color: #6278f7;
-	padding: 0 0 24px;
+	padding: 0 0 6px;
 	border-bottom: 4px solid #6278f7;
 }
 
@@ -30,17 +31,12 @@
 }
 
 @media screen and (max-width: 900px) {
-	.div-org {
-		margin: 0;
-	}
-
 	.orgSection {
 		width: 95%;
 	}
 
 	.title {
 		font-size: 25px;
-		padding: 0 0 12px;
 	}
 	.orgSection img {
 		width: 60px;
