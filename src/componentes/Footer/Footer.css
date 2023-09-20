@@ -19,6 +19,14 @@
 	background-size: 100%;
 }
 
+.footer > * {
+	width: 220px;
+	text-align: center;
+}
+.redes {
+	display: flex;
+	justify-content: center;
+}
 .redes a {
 	display: flex;
 	align-items: center;
@@ -42,17 +50,24 @@
 	border-radius: 50%;
 }
 
-.by-text {
+.by-text1 {
 	width: 140px;
+	display: inline-block;
+}
+.by-text2 {
+	display: none;
 }
 
 /* will apply to mobile and ipad */
 @media screen and (max-width: 768px) {
+	.footer > * {
+		width: 93px;
+	}
+
 	.div-footer {
 		padding: 0 15px;
 		height: 100px;
 		min-height: 100px;
-		height: 100px;
 	}
 	.footer strong {
 		font-size: 22px;
@@ -63,7 +78,10 @@
 	.redes a strong {
 		display: none;
 	}
-	.by-text {
-		width: 120px;
+	.by-text1 {
+		display: none;
+	}
+	.by-text2 {
+		display: inline-block;
 	}
 }

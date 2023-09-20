@@ -26,8 +26,8 @@
 	cursor: pointer;
 }
 
-.orgSection img:first-child {
-	visibility: hidden;
+.orgSection img:first-child:hover {
+	content: attr(title);
 }
 
 @media screen and (max-width: 900px) {

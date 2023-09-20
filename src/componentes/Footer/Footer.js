@@ -13,10 +13,14 @@ const Footer = () => {
 						<strong>My Links</strong>
 					</a>
 				</div>
+				<div>
+					<img src="/img/Logo.png "></img>
+				</div>
 
-				<img src="/img/Logo.png "></img>
-
-				<strong className="by-text">Developed by JFM</strong>
+				<div>
+					<strong className="by-text1">Developed by JFM</strong>
+					<strong className="by-text2">by JFM</strong>
+				</div>
 			</footer>
 		</div>
 	);
