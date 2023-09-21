@@ -134,11 +134,23 @@ function App() {
 
 	//Actualizar color destaque
 	const actualizarColorDestaque = (color, tituloEquipo) => {
-		console.log("destaque:", color, tituloEquipo);
+		const equiposActualizados = equipos.map((equipo) => {
+			if (equipo.titulo === tituloEquipo) {
+				equipo.colorDestaques = color;
+			}
+			return equipo;
+		});
+		actulizarEquipos(equiposActualizados);
 	};
-	//Actualizar color destaque
+	//Actualizar color Fondo
 	const actualizarColorFondo = (color, tituloEquipo) => {
-		console.log("fondo:", color, tituloEquipo);
+		const equiposActualizados = equipos.map((equipo) => {
+			if (equipo.titulo === tituloEquipo) {
+				equipo.colorFondo = color;
+			}
+			return equipo;
+		});
+		actulizarEquipos(equiposActualizados);
 	};
 
 	return (
