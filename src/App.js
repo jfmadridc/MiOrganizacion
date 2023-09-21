@@ -73,39 +73,7 @@ function App() {
 			equipo: "Front End",
 		},
 	]); //un state que es un arreglo de objetos que va acontener a los colaboradores
-
-	//lo que hace que muestre o oculte el formulario con el click en el boton
-	const cambiarMostrar = () => {
-		actualizarMostrar(!mostrarFormulario); //cambia de true a false y de false a tue
-	};
-
-	//Eliminar todos los colaboradores
-	const eliminarTodo = () => {
-		actualizarColaboradores([]); //cambia de true a false y de false a tue
-	};
-
-	//Eliminar Colaborador
-	const eliminarColaborador = () => {
-		console.log("eliminar colaborador");
-	};
-
-	//Registrar colaborador
-	const registrarColaborador = (colaborador) => {
-		//guardamos el objeto con Spread operator
-		actualizarColaboradores([...colaboradores, colaborador]); //es una copia del arreglo y le añade colaborador
-	};
-
-	//Actualizar color destaque
-	const actualizarColorDestaque = (color, tituloEquipo) => {
-		console.log("destaque:", color, tituloEquipo);
-	};
-	//Actualizar color destaque
-	const actualizarColorFondo = (color, tituloEquipo) => {
-		console.log("fondo:", color, tituloEquipo);
-	};
-
-	//lista de Equipos
-	const equipos = [
+	const [equipos, actulizarEquipos] = useState([
 		{
 			titulo: "Programación",
 			colorFondo: "#D9F7E9",
@@ -141,7 +109,37 @@ function App() {
 			colorFondo: "#FFDFC4",
 			colorDestaques: "#FF8A29",
 		},
-	];
+	]);
+
+	//lo que hace que muestre o oculte el formulario con el click en el boton
+	const cambiarMostrar = () => {
+		actualizarMostrar(!mostrarFormulario); //cambia de true a false y de false a tue
+	};
+
+	//Eliminar todos los colaboradores
+	const eliminarTodo = () => {
+		actualizarColaboradores([]); //cambia de true a false y de false a tue
+	};
+
+	//Eliminar Colaborador
+	const eliminarColaborador = () => {
+		console.log("eliminar colaborador");
+	};
+
+	//Registrar colaborador
+	const registrarColaborador = (colaborador) => {
+		//guardamos el objeto con Spread operator
+		actualizarColaboradores([...colaboradores, colaborador]); //es una copia del arreglo y le añade colaborador
+	};
+
+	//Actualizar color destaque
+	const actualizarColorDestaque = (color, tituloEquipo) => {
+		console.log("destaque:", color, tituloEquipo);
+	};
+	//Actualizar color destaque
+	const actualizarColorFondo = (color, tituloEquipo) => {
+		console.log("fondo:", color, tituloEquipo);
+	};
 
 	return (
 		<div className="div-app">
