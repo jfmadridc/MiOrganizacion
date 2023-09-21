@@ -34,6 +34,17 @@
 	right: 50px;
 }
 
+.input-destaques {
+	position: absolute;
+	top: 25px;
+	right: 50px;
+	cursor: pointer;
+}
+
+.input-destaques:hover {
+	content: attr(title);
+}
+
 @media screen and (max-width: 900px) {
 	.equipo {
 		width: 95%;

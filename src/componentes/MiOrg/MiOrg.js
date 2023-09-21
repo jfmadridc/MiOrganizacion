@@ -14,6 +14,7 @@ const MiOrg = (props) => {
 				<img
 					src="/img/add.png"
 					alt="boton agregar"
+					title="Agregar Colaborador"
 					onClick={props.switchMostrar}
 				/>
 			</section>

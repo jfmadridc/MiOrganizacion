@@ -3,7 +3,7 @@ import "./Header.css";
 function Header() {
 	return (
 		<header className="header">
-			<img src="/img/header.png" alt="org-header-image" />
+			<img src="/img/header.png" alt="org-header" />
 		</header>
 	);
 }

@@ -1,16 +1,20 @@
 import "./Equipo.css";
 import Colaborador from "../Colaborador/Colaborador";
+import hexToRgba from "hex-to-rgba";
 
 const Equipo = (props) => {
 	//destructuracion
 	const { titulo, colorFondo, colorDestaques } = props.datosEquipo;
 	const { colaboradores, eliminarColaborador } = props;
+	const objColorFondo = {
+		backgroundColor: hexToRgba(colorDestaques, 0.23),
+	};
 	const { actualizarColorDestaque } = props;
 
 	return (
 		<>
 			{colaboradores.length > 0 && (
-				<div className="div-equipo" style={{ backgroundColor: colorFondo }}>
+				<div className="div-equipo" style={objColorFondo}>
 					<section className="equipo">
 						<h3
 							style={{
@@ -24,6 +28,7 @@ const Equipo = (props) => {
 							className="input-destaques"
 							type="color"
 							value={colorDestaques}
+							title="Cambiar Color"
 							onChange={(evento) => {
 								actualizarColorDestaque(evento.target.value, titulo);
 							}}
