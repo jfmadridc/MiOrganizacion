@@ -21,39 +21,51 @@ function App() {
 			nombre: "Christian laksjd kajs lkajs kl laksjdlka s askjd lkaj",
 			puesto: "Dueño asljkdhj alhashd kajhd kjahs khaks ",
 			foto: "https://github.com/christianpva.png",
-			equipo: "Programación",
+			equipo: "Data Science",
 		},
 		{
 			nombre: "Christian laksjd kajs lkajs kl laksjdlka s askjd lkaj",
 			puesto: "Dueño asljkdhj alhashd kajhd kjahs khaks ",
 			foto: "https://github.com/christianpva.png",
-			equipo: "Programación",
+			equipo: "Devops",
 		},
 		{
 			nombre: "Christian laksjd kajs lkajs kl laksjdlka s askjd lkaj",
 			puesto: "Dueño asljkdhj alhashd kajhd kjahs khaks ",
 			foto: "https://github.com/christianpva.png",
-			equipo: "Programación",
+			equipo: "UX y Diseño",
 		},
 		{
 			nombre: "Christian laksjd kajs lkajs kl laksjdlka s askjd lkaj",
 			puesto: "Dueño asljkdhj alhashd kajhd kjahs khaks ",
 			foto: "https://github.com/christianpva.png",
-			equipo: "Programación",
+			equipo: "Móvil",
 		},
 		{
 			nombre: "Christian laksjd kajs lkajs kl laksjdlka s askjd lkaj",
 			puesto: "Dueño asljkdhj alhashd kajhd kjahs khaks ",
 			foto: "https://github.com/christianpva.png",
-			equipo: "Programación",
+			equipo: "Innovacion y Gestión",
 		},
 		{
-			nombre: "Christian laksjd kajs lkajs kl laksjdlka s askjd lkaj",
-			puesto: "Dueño asljkdhj alhashd kajhd kjahs khaks ",
+			nombre: "Christian ",
+			puesto: "Dueño  ",
 			foto: "https://github.com/christianpva.png",
 			equipo: "Programación",
 		},
 
+		{
+			nombre: "Tartiana",
+			puesto: "My Teacher",
+			foto: "https://media.licdn.com/dms/image/D4D03AQG2FWMkos_0oA/profile-displayphoto-shrink_200_200/0/1691671216460?e=1700697600&v=beta&t=9uFXPOpL9RrtwZKQjIkO_Lw7j7aTuumwcGccPKO1OLM",
+			equipo: "Front End",
+		},
+		{
+			nombre: "Tartiana",
+			puesto: "My Teacher",
+			foto: "https://media.licdn.com/dms/image/D4D03AQG2FWMkos_0oA/profile-displayphoto-shrink_200_200/0/1691671216460?e=1700697600&v=beta&t=9uFXPOpL9RrtwZKQjIkO_Lw7j7aTuumwcGccPKO1OLM",
+			equipo: "Front End",
+		},
 		{
 			nombre: "Tartiana",
 			puesto: "My Teacher",
@@ -81,6 +93,15 @@ function App() {
 	const registrarColaborador = (colaborador) => {
 		//guardamos el objeto con Spread operator
 		actualizarColaboradores([...colaboradores, colaborador]); //es una copia del arreglo y le añade colaborador
+	};
+
+	//Actualizar color destaque
+	const actualizarColorDestaque = (color, tituloEquipo) => {
+		console.log("destaque:", color, tituloEquipo);
+	};
+	//Actualizar color destaque
+	const actualizarColorFondo = (color, tituloEquipo) => {
+		console.log("fondo:", color, tituloEquipo);
 	};
 
 	//lista de Equipos
@@ -147,6 +168,8 @@ function App() {
 						(colaborador) => colaborador.equipo === equipo.titulo
 					)}
 					eliminarColaborador={eliminarColaborador}
+					actualizarColorDestaque={actualizarColorDestaque}
+					actualizarColorFondo={actualizarColorFondo}
 				/>
 			))}
 

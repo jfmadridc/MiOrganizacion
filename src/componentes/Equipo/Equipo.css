@@ -8,6 +8,7 @@
 	max-width: 1120px;
 	display: flex;
 	flex-direction: column;
+	position: relative;
 }
 
 .equipo h3 {
@@ -24,7 +25,18 @@
 .colaboradores {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-around;
+}
+
+.input-fondo {
+	position: absolute;
+	top: 25px;
+	right: 50px;
+}
+.input-destaques {
+	position: absolute;
+	top: 25px;
+	left: 50px;
 }
 
 @media screen and (max-width: 900px) {
@@ -33,5 +45,22 @@
 	}
 	.equipo h3 {
 		font-size: 23px;
+		word-break: keep-all;
+		width: calc(100vw - 170px);
+		text-align: center;
+		border-bottom: none;
+		text-decoration: underline;
+		text-decoration-thickness: 3px;
+	}
+
+	.input-fondo {
+		position: absolute;
+		top: 25px;
+		right: 20px;
+	}
+	.input-destaques {
+		position: absolute;
+		top: 25px;
+		left: 20px;
 	}
 }
