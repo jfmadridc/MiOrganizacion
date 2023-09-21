@@ -28,15 +28,10 @@
 	justify-content: space-around;
 }
 
-.input-fondo {
-	position: absolute;
-	top: 25px;
-	right: 50px;
-}
 .input-destaques {
 	position: absolute;
 	top: 25px;
-	left: 50px;
+	right: 50px;
 }
 
 @media screen and (max-width: 900px) {
@@ -53,14 +48,9 @@
 		text-decoration-thickness: 3px;
 	}
 
-	.input-fondo {
-		position: absolute;
-		top: 25px;
-		right: 20px;
-	}
 	.input-destaques {
 		position: absolute;
 		top: 25px;
-		left: 20px;
+		right: 20px;
 	}
 }

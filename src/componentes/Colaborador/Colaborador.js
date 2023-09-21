@@ -7,10 +7,6 @@ const Colaborador = (props) => {
 
 	return (
 		<div className="colaborador">
-			<div
-				className="encabezado"
-				style={{ backgroundColor: colorEncabezado }}
-			></div>
 			<img
 				className="boton-eliminar"
 				src="/img/Delete.png"
@@ -18,6 +14,9 @@ const Colaborador = (props) => {
 				alt="boton eliminar colaborador"
 				title="Eliminar Colaborador"
 			/>
+
+			<div className="encabezado" style={{ backgroundColor: colorEncabezado }}></div>
+
 			<div className="info">
 				<img className="foto-Cola" src={foto} alt={`foto ${nombre}`} />
 				<h4> {nombre} </h4>

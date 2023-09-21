@@ -142,16 +142,6 @@ function App() {
 		});
 		actulizarEquipos(equiposActualizados);
 	};
-	//Actualizar color Fondo
-	const actualizarColorFondo = (color, tituloEquipo) => {
-		const equiposActualizados = equipos.map((equipo) => {
-			if (equipo.titulo === tituloEquipo) {
-				equipo.colorFondo = color;
-			}
-			return equipo;
-		});
-		actulizarEquipos(equiposActualizados);
-	};
 
 	return (
 		<div className="div-app">
@@ -179,7 +169,6 @@ function App() {
 					)}
 					eliminarColaborador={eliminarColaborador}
 					actualizarColorDestaque={actualizarColorDestaque}
-					actualizarColorFondo={actualizarColorFondo}
 				/>
 			))}
 
