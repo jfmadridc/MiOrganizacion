@@ -14,7 +14,7 @@ const Footer = () => {
 					</a>
 				</div>
 				<div>
-					<img src="/img/Logo.png "></img>
+					<img src="/img/Logo.png " alt="logo org"></img>
 				</div>
 
 				<div>

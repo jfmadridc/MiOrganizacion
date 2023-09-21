@@ -67,8 +67,14 @@ function App() {
 		actualizarMostrar(!mostrarFormulario); //cambia de true a false y de false a tue
 	};
 
+	//Eliminar todos los colaboradores
 	const eliminarTodo = () => {
 		actualizarColaboradores([]); //cambia de true a false y de false a tue
+	};
+
+	//Eliminar Colaborador
+	const eliminarColaborador = () => {
+		console.log("eliminar colaborador");
 	};
 
 	//Registrar colaborador
@@ -140,6 +146,7 @@ function App() {
 					colaboradores={colaboradores.filter(
 						(colaborador) => colaborador.equipo === equipo.titulo
 					)}
+					eliminarColaborador={eliminarColaborador}
 				/>
 			))}
 

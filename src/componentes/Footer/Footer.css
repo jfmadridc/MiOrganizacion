@@ -27,11 +27,13 @@
 	display: flex;
 	justify-content: center;
 }
+
 .redes a {
 	display: flex;
 	align-items: center;
 	text-decoration: none;
 }
+
 .redes a strong {
 	border-bottom: 2px solid white;
 	margin-left: 10px;
@@ -54,6 +56,7 @@
 	width: 140px;
 	display: inline-block;
 }
+
 .by-text2 {
 	display: none;
 }
@@ -69,18 +72,23 @@
 		height: 100px;
 		min-height: 100px;
 	}
+
 	.footer strong {
 		font-size: 22px;
 	}
+
 	.redes img {
 		width: 70px;
 	}
+
 	.redes a strong {
 		display: none;
 	}
+
 	.by-text1 {
 		display: none;
 	}
+
 	.by-text2 {
 		display: inline-block;
 	}

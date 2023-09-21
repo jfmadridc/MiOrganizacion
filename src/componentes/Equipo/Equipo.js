@@ -4,7 +4,7 @@ import Colaborador from "../Colaborador/Colaborador";
 const Equipo = (props) => {
 	//destructuracion
 	const { titulo, colorFondo, colorDestaques } = props.datosEquipo;
-	const { colaboradores } = props;
+	const { colaboradores, eliminarColaborador } = props;
 
 	return (
 		<>
@@ -23,6 +23,7 @@ const Equipo = (props) => {
 									datosCola={colaborador}
 									key={index}
 									colDestaques={colorDestaques}
+									eliminarColaborador={eliminarColaborador}
 								/>
 							))}
 						</div>

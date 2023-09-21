@@ -3,7 +3,6 @@
 	flex-direction: column;
 	width: 256px;
 	text-align: center;
-	margin-bottom: 24px;
 	min-height: 278px;
 	margin: 0px 12px 30px;
 	box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.25);
@@ -15,7 +14,7 @@
 	height: 90px;
 }
 
-.colaborador img {
+.foto-Cola {
 	width: 120px;
 	border-radius: 50%;
 	position: relative;
@@ -46,4 +45,15 @@
 	color: #212121;
 	margin: 10px 0 0;
 	padding: 0 32px 27px;
+}
+
+.boton-eliminar {
+	display: block;
+	cursor: pointer;
+	width: 40px;
+	position: absolute;
+}
+
+.boton-eliminar :hover {
+	content: attr(title);
 }
