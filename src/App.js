@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { v4 as uuid } from "uuid";
 
 import "./App.css";
 import Header from "./componentes/Header/Header";
@@ -12,42 +13,49 @@ function App() {
 	const [mostrarFormulario, actualizarMostrar] = useState(false); //un state de true or false
 	const [colaboradores, actualizarColaboradores] = useState([
 		{
+			id: uuid(),
 			nombre: "Juan",
 			puesto: "Estudiante",
 			foto: "https://github.com/jfmadridc.png",
 			equipo: "Programación",
 		},
 		{
+			id: uuid(),
 			nombre: "Christian laksjd kajs lkajs kl laksjdlka s askjd lkaj",
 			puesto: "Dueño asljkdhj alhashd kajhd kjahs khaks ",
 			foto: "https://github.com/christianpva.png",
 			equipo: "Data Science",
 		},
 		{
+			id: uuid(),
 			nombre: "Christian laksjd kajs lkajs kl laksjdlka s askjd lkaj",
 			puesto: "Dueño asljkdhj alhashd kajhd kjahs khaks ",
 			foto: "https://github.com/christianpva.png",
 			equipo: "Devops",
 		},
 		{
+			id: uuid(),
 			nombre: "Christian laksjd kajs lkajs kl laksjdlka s askjd lkaj",
 			puesto: "Dueño asljkdhj alhashd kajhd kjahs khaks ",
 			foto: "https://github.com/christianpva.png",
 			equipo: "UX y Diseño",
 		},
 		{
+			id: uuid(),
 			nombre: "Christian laksjd kajs lkajs kl laksjdlka s askjd lkaj",
 			puesto: "Dueño asljkdhj alhashd kajhd kjahs khaks ",
 			foto: "https://github.com/christianpva.png",
 			equipo: "Móvil",
 		},
 		{
+			id: uuid(),
 			nombre: "Christian laksjd kajs lkajs kl laksjdlka s askjd lkaj",
 			puesto: "Dueño asljkdhj alhashd kajhd kjahs khaks ",
 			foto: "https://github.com/christianpva.png",
 			equipo: "Innovacion y Gestión",
 		},
 		{
+			id: uuid(),
 			nombre: "Christian ",
 			puesto: "Dueño  ",
 			foto: "https://github.com/christianpva.png",
@@ -55,18 +63,21 @@ function App() {
 		},
 
 		{
+			id: uuid(),
 			nombre: "Tartiana",
 			puesto: "My Teacher",
 			foto: "https://media.licdn.com/dms/image/D4D03AQG2FWMkos_0oA/profile-displayphoto-shrink_200_200/0/1691671216460?e=1700697600&v=beta&t=9uFXPOpL9RrtwZKQjIkO_Lw7j7aTuumwcGccPKO1OLM",
 			equipo: "Front End",
 		},
 		{
+			id: uuid(),
 			nombre: "Tartiana",
 			puesto: "My Teacher",
 			foto: "https://media.licdn.com/dms/image/D4D03AQG2FWMkos_0oA/profile-displayphoto-shrink_200_200/0/1691671216460?e=1700697600&v=beta&t=9uFXPOpL9RrtwZKQjIkO_Lw7j7aTuumwcGccPKO1OLM",
 			equipo: "Front End",
 		},
 		{
+			id: uuid(),
 			nombre: "Tartiana",
 			puesto: "My Teacher",
 			foto: "https://media.licdn.com/dms/image/D4D03AQG2FWMkos_0oA/profile-displayphoto-shrink_200_200/0/1691671216460?e=1700697600&v=beta&t=9uFXPOpL9RrtwZKQjIkO_Lw7j7aTuumwcGccPKO1OLM",
@@ -75,36 +86,43 @@ function App() {
 	]); //un state que es un arreglo de objetos que va acontener a los colaboradores
 	const [equipos, actulizarEquipos] = useState([
 		{
+			id: uuid(),
 			titulo: "Programación",
 			colorFondo: "#D9F7E9",
 			colorDestaques: "#57C278",
 		},
 		{
+			id: uuid(),
 			titulo: "Front End",
 			colorFondo: "#E8F8FF",
 			colorDestaques: "#82CFFA",
 		},
 		{
+			id: uuid(),
 			titulo: "Data Science",
 			colorFondo: "#F0F8E2",
 			colorDestaques: "#A6D157",
 		},
 		{
+			id: uuid(),
 			titulo: "Devops",
 			colorFondo: "#FBD3D4",
 			colorDestaques: "#E06B69",
 		},
 		{
+			id: uuid(),
 			titulo: "UX y Diseño",
 			colorFondo: "#F6D7ED",
 			colorDestaques: "#DB6EBF",
 		},
 		{
+			id: uuid(),
 			titulo: "Móvil",
 			colorFondo: "#FFECBA",
 			colorDestaques: "#FFBA05",
 		},
 		{
+			id: uuid(),
 			titulo: "Innovacion y Gestión",
 			colorFondo: "#FFDFC4",
 			colorDestaques: "#FF8A29",
@@ -133,9 +151,9 @@ function App() {
 	};
 
 	//Actualizar color destaque
-	const actualizarColorDestaque = (color, tituloEquipo) => {
+	const actualizarColorDestaque = (color, id) => {
 		const equiposActualizados = equipos.map((equipo) => {
-			if (equipo.titulo === tituloEquipo) {
+			if (equipo.id === id) {
 				equipo.colorDestaques = color;
 			}
 			return equipo;
