@@ -110,7 +110,7 @@ function App() {
 
 		{
 			id: uuid(),
-			nombre: "Tartiana",
+			nombre: "Tatiana",
 			puesto: "Profesora",
 			foto: "https://media.licdn.com/dms/image/D4D03AQG2FWMkos_0oA/profile-displayphoto-shrink_200_200/0/1691671216460?e=1700697600&v=beta&t=9uFXPOpL9RrtwZKQjIkO_Lw7j7aTuumwcGccPKO1OLM",
 			equipo: "Front End",
@@ -118,7 +118,7 @@ function App() {
 		},
 		{
 			id: uuid(),
-			nombre: "Tartiana",
+			nombre: "Tatiana",
 			puesto: "Profesora",
 			foto: "https://media.licdn.com/dms/image/D4D03AQG2FWMkos_0oA/profile-displayphoto-shrink_200_200/0/1691671216460?e=1700697600&v=beta&t=9uFXPOpL9RrtwZKQjIkO_Lw7j7aTuumwcGccPKO1OLM",
 			equipo: "Front End",
@@ -127,7 +127,7 @@ function App() {
 
 		{
 			id: uuid(),
-			nombre: "Tartiana",
+			nombre: "Tatiana",
 			puesto: "Profesora",
 			foto: "https://media.licdn.com/dms/image/D4D03AQG2FWMkos_0oA/profile-displayphoto-shrink_200_200/0/1691671216460?e=1700697600&v=beta&t=9uFXPOpL9RrtwZKQjIkO_Lw7j7aTuumwcGccPKO1OLM",
 			equipo: "Front End",
