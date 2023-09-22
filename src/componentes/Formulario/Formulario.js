@@ -11,7 +11,7 @@ const Formulario = (props) => {
 	const [equipo, actualizarEquipo] = useState("");
 
 	const [titulo, actualizarTitulo] = useState("");
-	const [color, actualizarColor] = useState("");
+	const [color, actualizarColor] = useState("#57C278");
 
 	const { registrarEquipo, registrarColaborador } = props;
 
@@ -81,11 +81,12 @@ const Formulario = (props) => {
 					setValor={actualizarTitulo}
 				/>
 				<CampoTexto
+					clase="campo-texto campo-color"
 					titulo="Color"
-					placeholder="Ingrese el color Hex"
 					isRequired
 					valor={color}
 					setValor={actualizarColor}
+					tipo="color"
 				/>
 				<Boton>Crear Equipo</Boton>
 			</form>

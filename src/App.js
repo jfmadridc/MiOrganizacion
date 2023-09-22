@@ -10,7 +10,7 @@ import Footer from "./componentes/Footer/Footer";
 
 function App() {
 	// States/hooks
-	const [mostrarFormulario, actualizarMostrar] = useState(false); //un state de true or false
+	const [mostrarFormulario, actualizarMostrar] = useState(true); //un state de true or false
 	const [colaboradores, actualizarColaboradores] = useState([
 		{
 			id: uuid(),

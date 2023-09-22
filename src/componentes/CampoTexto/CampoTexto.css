@@ -27,7 +27,16 @@
 	color: #a4a4a4;
 }
 
-@media screen and (max-width: 900px) {
+.campo-color {
+	margin-bottom: 12px;
+}
+.campo-color input {
+	width: 80px;
+	padding: 0px 2px;
+	height: 40px;
+}
+
+@media screen and (max-width: 768px) {
 	.campo-texto {
 		margin: 12px 0;
 	}
@@ -40,5 +49,9 @@
 	.campo-texto input {
 		font-size: 14px;
 		padding: 20px 10px;
+	}
+
+	.campo-color input {
+		padding: 0px 2px;
 	}
 }

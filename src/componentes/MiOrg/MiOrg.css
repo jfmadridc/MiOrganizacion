@@ -30,7 +30,7 @@
 	content: attr(title);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
 	.orgSection {
 		width: 95%;
 	}

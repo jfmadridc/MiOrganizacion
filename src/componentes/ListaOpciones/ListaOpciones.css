@@ -23,7 +23,7 @@
 	color: #212121;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
 	.lista-opciones {
 		margin: 12px 0 0;
 	}
