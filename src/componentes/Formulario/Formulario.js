@@ -60,7 +60,7 @@ const Formulario = (props) => {
 				/>
 				<Campo
 					titulo="Foto"
-					placeholder="Seleccione la foto"
+					placeholder="Url foto cuadrada"
 					isRequired
 					valor={foto}
 					setValor={actualizarFoto}
