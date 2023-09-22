@@ -12,4 +12,4 @@ Mi Org es una app que te permite organizar los miembros de una empresa o grupo d
 -   Cambiar color de Destaques y fondo de cada equipo
 -   Marcar con me gusta/corazones colaboradores en especifico
 
-###Desarrollada con React por JuanF Madrid
+### Desarrollada con React por JuanF Madrid
