@@ -1,7 +1,7 @@
 import "./Colaborador.css";
 
 const Colaborador = (props) => {
-	const { nombre, puesto, foto } = props.datosCola;
+	const { nombre, puesto, foto, id } = props.datosCola;
 	const colorEncabezado = props.colDestaques;
 	const { eliminarColaborador } = props;
 
@@ -10,7 +10,7 @@ const Colaborador = (props) => {
 			<img
 				className="boton-eliminar"
 				src="/img/Delete.png"
-				onClick={eliminarColaborador}
+				onClick={() => eliminarColaborador(id)}
 				alt="boton eliminar colaborador"
 				title="Eliminar Colaborador"
 			/>

@@ -140,8 +140,11 @@ function App() {
 	};
 
 	//Eliminar Colaborador
-	const eliminarColaborador = () => {
-		console.log("eliminar colaborador");
+	const eliminarColaborador = (id) => {
+		const colaboradoresActualizados = colaboradores.filter(
+			(colaborador) => colaborador.id !== id
+		);
+		actualizarColaboradores(colaboradoresActualizados);
 	};
 
 	//Registrar colaborador
