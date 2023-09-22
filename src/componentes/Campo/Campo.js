@@ -1,8 +1,8 @@
-import "./CampoTexto.css";
+import "./Campo.css";
 
 const CampoTexto = (props) => {
 	const placeHolderDots = props.placeholder + "...";
-	const { tipo = "text", clase = "campo-texto" } = props;
+	const { tipo = "text", clase = "campo" } = props;
 
 	const manejarCambio = (e) => {
 		props.setValor(e.target.value);

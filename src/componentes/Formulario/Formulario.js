@@ -1,5 +1,5 @@
 import "./Formulario.css";
-import CampoTexto from "../CampoTexto/CampoTexto.js";
+import Campo from "../Campo/Campo.js";
 import ListaOpciones from "../ListaOpciones/ListaOpciones.js";
 import Boton from "../Boton/Boton.js";
 import { useState } from "react";
@@ -44,21 +44,21 @@ const Formulario = (props) => {
 		<section className="formulario">
 			<form onSubmit={manejarEnvioCola} className="form-cola">
 				<h2>Crear el colaborador.</h2>
-				<CampoTexto
+				<Campo
 					titulo="Nombre"
 					placeholder="Ingrese el nombre"
 					isRequired={true}
 					valor={nombre}
 					setValor={actualizarNombre}
 				/>
-				<CampoTexto
+				<Campo
 					titulo="Puesto"
 					placeholder="Ingrese el puesto"
 					isRequired
 					valor={puesto}
 					setValor={actualizarPuesto}
 				/>
-				<CampoTexto
+				<Campo
 					titulo="Foto"
 					placeholder="Seleccione la foto"
 					isRequired
@@ -73,15 +73,15 @@ const Formulario = (props) => {
 
 			<form onSubmit={manejarEnvioEquipo} className="form-equipo">
 				<h2>Crear equipo.</h2>
-				<CampoTexto
+				<Campo
 					titulo="Titulo"
 					placeholder="Ingrese el titulo"
 					isRequired={true}
 					valor={titulo}
 					setValor={actualizarTitulo}
 				/>
-				<CampoTexto
-					clase="campo-texto campo-color"
+				<Campo
+					clase="campo campo-color"
 					titulo="Color"
 					isRequired
 					valor={color}

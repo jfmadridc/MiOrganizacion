@@ -1,8 +1,8 @@
-.campo-texto {
+.campo {
 	margin: 24px 0;
 }
 
-.campo-texto label {
+.campo label {
 	font-size: 18px;
 	color: #212121;
 	font-weight: 600;
@@ -11,7 +11,7 @@
 	font-family: "Montserrat", sans-serif;
 }
 
-.campo-texto input {
+.campo input {
 	font-family: "Montserrat", sans-serif;
 	font-size: 16px;
 	width: 100%;
@@ -23,7 +23,7 @@
 	outline-color: #6278f7;
 }
 
-.campo-texto input::placeholder {
+.campo input::placeholder {
 	color: #a4a4a4;
 }
 
@@ -37,20 +37,22 @@
 }
 
 @media screen and (max-width: 768px) {
-	.campo-texto {
+	.campo {
 		margin: 12px 0;
 	}
 
-	.campo-texto label {
+	.campo label {
 		font-size: 14px;
 		margin-bottom: 6px;
 	}
 
-	.campo-texto input {
+	.campo input {
 		font-size: 14px;
 		padding: 20px 10px;
 	}
-
+	.campo-color {
+		margin-bottom: 0px;
+	}
 	.campo-color input {
 		padding: 0px 2px;
 	}
