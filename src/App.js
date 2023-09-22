@@ -10,7 +10,7 @@ import Footer from "./componentes/Footer/Footer";
 
 function App() {
 	// States/hooks
-	const [mostrarFormulario, actualizarMostrar] = useState(true); //un state de true or false
+	const [mostrarFormulario, actualizarMostrar] = useState(false); //un state de true or false
 	const [colaboradores, actualizarColaboradores] = useState([
 		{
 			id: uuid(),
@@ -18,6 +18,7 @@ function App() {
 			puesto: "Estudiante",
 			foto: "https://github.com/jfmadridc.png",
 			equipo: "Programación",
+			fav: true,
 		},
 		{
 			id: uuid(),
@@ -25,6 +26,7 @@ function App() {
 			puesto: "Estudiante",
 			foto: "https://github.com/jfmadridc.png",
 			equipo: "Programación",
+			fav: false,
 		},
 		{
 			id: uuid(),
@@ -32,6 +34,7 @@ function App() {
 			puesto: "Estudiante",
 			foto: "https://github.com/jfmadridc.png",
 			equipo: "Programación",
+			fav: false,
 		},
 		{
 			id: uuid(),
@@ -39,6 +42,7 @@ function App() {
 			puesto: "Estudiante",
 			foto: "https://github.com/jfmadridc.png",
 			equipo: "Programación",
+			fav: false,
 		},
 		{
 			id: uuid(),
@@ -46,6 +50,7 @@ function App() {
 			puesto: "Estudiante",
 			foto: "https://github.com/jfmadridc.png",
 			equipo: "Programación",
+			fav: false,
 		},
 		{
 			id: uuid(),
@@ -60,6 +65,7 @@ function App() {
 			puesto: "Dueño asljkdhj alhashd kajhd kjahs khaks ",
 			foto: "https://github.com/christianpva.png",
 			equipo: "Data Science",
+			fav: false,
 		},
 		{
 			id: uuid(),
@@ -67,6 +73,7 @@ function App() {
 			puesto: "Dueño asljkdhj alhashd kajhd kjahs khaks ",
 			foto: "https://github.com/christianpva.png",
 			equipo: "Devops",
+			fav: false,
 		},
 		{
 			id: uuid(),
@@ -74,6 +81,7 @@ function App() {
 			puesto: "Dueño asljkdhj alhashd kajhd kjahs khaks ",
 			foto: "https://github.com/christianpva.png",
 			equipo: "UX y Diseño",
+			fav: false,
 		},
 		{
 			id: uuid(),
@@ -81,6 +89,7 @@ function App() {
 			puesto: "Dueño asljkdhj alhashd kajhd kjahs khaks ",
 			foto: "https://github.com/christianpva.png",
 			equipo: "Móvil",
+			fav: false,
 		},
 		{
 			id: uuid(),
@@ -88,6 +97,7 @@ function App() {
 			puesto: "Dueño asljkdhj alhashd kajhd kjahs khaks ",
 			foto: "https://github.com/christianpva.png",
 			equipo: "Innovacion y Gestión",
+			fav: false,
 		},
 		{
 			id: uuid(),
@@ -95,6 +105,7 @@ function App() {
 			puesto: "Dueño  ",
 			foto: "https://github.com/christianpva.png",
 			equipo: "Programación",
+			fav: false,
 		},
 
 		{
@@ -103,6 +114,7 @@ function App() {
 			puesto: "My Teacher",
 			foto: "https://media.licdn.com/dms/image/D4D03AQG2FWMkos_0oA/profile-displayphoto-shrink_200_200/0/1691671216460?e=1700697600&v=beta&t=9uFXPOpL9RrtwZKQjIkO_Lw7j7aTuumwcGccPKO1OLM",
 			equipo: "Front End",
+			fav: false,
 		},
 		{
 			id: uuid(),
@@ -110,6 +122,7 @@ function App() {
 			puesto: "My Teacher",
 			foto: "https://media.licdn.com/dms/image/D4D03AQG2FWMkos_0oA/profile-displayphoto-shrink_200_200/0/1691671216460?e=1700697600&v=beta&t=9uFXPOpL9RrtwZKQjIkO_Lw7j7aTuumwcGccPKO1OLM",
 			equipo: "Front End",
+			fav: false,
 		},
 
 		{
@@ -118,6 +131,7 @@ function App() {
 			puesto: "My Teacher",
 			foto: "https://media.licdn.com/dms/image/D4D03AQG2FWMkos_0oA/profile-displayphoto-shrink_200_200/0/1691671216460?e=1700697600&v=beta&t=9uFXPOpL9RrtwZKQjIkO_Lw7j7aTuumwcGccPKO1OLM",
 			equipo: "Front End",
+			fav: false,
 		},
 	]); //un state que es un arreglo de objetos que va acontener a los colaboradores
 	const [equipos, actulizarEquipos] = useState([
@@ -170,9 +184,10 @@ function App() {
 		actualizarMostrar(!mostrarFormulario); //cambia de true a false y de false a tue
 	};
 
-	//Eliminar todos los colaboradores
-	const eliminarTodo = () => {
-		actualizarColaboradores([]); //cambia de true a false y de false a tue
+	//Registrar colaborador
+	const registrarColaborador = (colaborador) => {
+		//guardamos el objeto con Spread operator
+		actualizarColaboradores([...colaboradores, colaborador]); //es una copia del arreglo y le añade colaborador
 	};
 
 	//Eliminar Colaborador
@@ -183,10 +198,9 @@ function App() {
 		actualizarColaboradores(colaboradoresActualizados);
 	};
 
-	//Registrar colaborador
-	const registrarColaborador = (colaborador) => {
-		//guardamos el objeto con Spread operator
-		actualizarColaboradores([...colaboradores, colaborador]); //es una copia del arreglo y le añade colaborador
+	//Eliminar todos los colaboradores
+	const eliminarTodo = () => {
+		actualizarColaboradores([]); //cambia de true a false y de false a tue
 	};
 
 	//Registrar Equipo
@@ -204,6 +218,17 @@ function App() {
 			return equipo;
 		});
 		actulizarEquipos(equiposActualizados);
+	};
+
+	//Actualizar favorito
+	const like = (id) => {
+		const colaboradoresActualizados = colaboradores.map((colaborador) => {
+			if (colaborador.id === id) {
+				colaborador.fav = !colaborador.fav;
+			}
+			return colaborador;
+		});
+		actualizarColaboradores(colaboradoresActualizados);
 	};
 
 	return (
@@ -233,6 +258,7 @@ function App() {
 					)}
 					eliminarColaborador={eliminarColaborador}
 					actualizarColorDestaque={actualizarColorDestaque}
+					like={like}
 				/>
 			))}
 

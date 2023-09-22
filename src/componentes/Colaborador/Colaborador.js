@@ -1,9 +1,9 @@
 import "./Colaborador.css";
-
+import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 const Colaborador = (props) => {
-	const { nombre, puesto, foto, id } = props.datosCola;
+	const { nombre, puesto, foto, id, fav } = props.datosCola;
 	const colorEncabezado = props.colDestaques;
-	const { eliminarColaborador } = props;
+	const { eliminarColaborador, like } = props;
 
 	return (
 		<div className="colaborador">
@@ -14,6 +14,12 @@ const Colaborador = (props) => {
 				alt="boton eliminar colaborador"
 				title="Eliminar Colaborador"
 			/>
+
+			{fav ? (
+				<AiFillHeart className="corazon-lleno" color="red" onClick={() => like(id)} />
+			) : (
+				<AiOutlineHeart className="corazon-vacio" onClick={() => like(id)} />
+			)}
 
 			<div className="encabezado" style={{ backgroundColor: colorEncabezado }}></div>
 
