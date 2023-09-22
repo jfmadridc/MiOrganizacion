@@ -21,6 +21,41 @@ function App() {
 		},
 		{
 			id: uuid(),
+			nombre: "Juan",
+			puesto: "Estudiante",
+			foto: "https://github.com/jfmadridc.png",
+			equipo: "Programación",
+		},
+		{
+			id: uuid(),
+			nombre: "Juan",
+			puesto: "Estudiante",
+			foto: "https://github.com/jfmadridc.png",
+			equipo: "Programación",
+		},
+		{
+			id: uuid(),
+			nombre: "Juan",
+			puesto: "Estudiante",
+			foto: "https://github.com/jfmadridc.png",
+			equipo: "Programación",
+		},
+		{
+			id: uuid(),
+			nombre: "Juan",
+			puesto: "Estudiante",
+			foto: "https://github.com/jfmadridc.png",
+			equipo: "Programación",
+		},
+		{
+			id: uuid(),
+			nombre: "Christian laksjd kajs lkajs kl laksjdlka s askjd lkaj",
+			puesto: "Dueño asljkdhj alhashd kajhd kjahs khaks ",
+			foto: "https://github.com/christianpva.png",
+			equipo: "Data Science",
+		},
+		{
+			id: uuid(),
 			nombre: "Christian laksjd kajs lkajs kl laksjdlka s askjd lkaj",
 			puesto: "Dueño asljkdhj alhashd kajhd kjahs khaks ",
 			foto: "https://github.com/christianpva.png",
@@ -76,6 +111,7 @@ function App() {
 			foto: "https://media.licdn.com/dms/image/D4D03AQG2FWMkos_0oA/profile-displayphoto-shrink_200_200/0/1691671216460?e=1700697600&v=beta&t=9uFXPOpL9RrtwZKQjIkO_Lw7j7aTuumwcGccPKO1OLM",
 			equipo: "Front End",
 		},
+
 		{
 			id: uuid(),
 			nombre: "Tartiana",
@@ -153,6 +189,12 @@ function App() {
 		actualizarColaboradores([...colaboradores, colaborador]); //es una copia del arreglo y le añade colaborador
 	};
 
+	//Registrar Equipo
+	const registrarEquipo = (nuevoEquipo) => {
+		console.log(nuevoEquipo);
+		actulizarEquipos([...equipos, { ...nuevoEquipo, id: uuid() }]);
+	};
+
 	//Actualizar color destaque
 	const actualizarColorDestaque = (color, id) => {
 		const equiposActualizados = equipos.map((equipo) => {
@@ -176,6 +218,7 @@ function App() {
 				<Formulario
 					equipos={equipos.map((equipo) => equipo.titulo)}
 					registrarColaborador={registrarColaborador}
+					registrarEquipo={registrarEquipo}
 				/>
 			) : (
 				<></>

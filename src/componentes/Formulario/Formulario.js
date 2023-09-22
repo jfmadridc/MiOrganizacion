@@ -10,7 +10,12 @@ const Formulario = (props) => {
 	const [foto, actualizarFoto] = useState("");
 	const [equipo, actualizarEquipo] = useState("");
 
-	const manejarEnvio = (e) => {
+	const [titulo, actualizarTitulo] = useState("");
+	const [color, actualizarColor] = useState("");
+
+	const { registrarEquipo, registrarColaborador } = props;
+
+	const manejarEnvioCola = (e) => {
 		e.preventDefault();
 
 		const datosParaEnviar = {
@@ -19,7 +24,7 @@ const Formulario = (props) => {
 			foto,
 			equipo,
 		};
-		props.registrarColaborador(datosParaEnviar);
+		registrarColaborador(datosParaEnviar);
 		// Reset the state of the input fields
 		actualizarNombre("");
 		actualizarPuesto("");
@@ -27,10 +32,18 @@ const Formulario = (props) => {
 		actualizarEquipo("");
 	};
 
+	const manejarEnvioEquipo = (e) => {
+		e.preventDefault();
+		registrarEquipo({ titulo, colorDestaques: color });
+		// Reset the state of the input fields
+		actualizarTitulo("");
+		actualizarColor("");
+	};
+
 	return (
 		<section className="formulario">
-			<form onSubmit={manejarEnvio}>
-				<h2>Rellena el formulario para crear el colaborador.</h2>
+			<form onSubmit={manejarEnvioCola} className="form-cola">
+				<h2>Crear el colaborador.</h2>
 				<CampoTexto
 					titulo="Nombre"
 					placeholder="Ingrese el nombre"
@@ -53,13 +66,28 @@ const Formulario = (props) => {
 					setValor={actualizarFoto}
 				/>
 
-				<ListaOpciones
-					valor={equipo}
-					setValor={actualizarEquipo}
-					equipos={props.equipos}
-				/>
+				<ListaOpciones valor={equipo} setValor={actualizarEquipo} equipos={props.equipos} />
 
-				<Boton>Crear</Boton>
+				<Boton>Crear Colaborador</Boton>
+			</form>
+
+			<form onSubmit={manejarEnvioEquipo} className="form-equipo">
+				<h2>Crear equipo.</h2>
+				<CampoTexto
+					titulo="Titulo"
+					placeholder="Ingrese el titulo"
+					isRequired={true}
+					valor={titulo}
+					setValor={actualizarTitulo}
+				/>
+				<CampoTexto
+					titulo="Color"
+					placeholder="Ingrese el color Hex"
+					isRequired
+					valor={color}
+					setValor={actualizarColor}
+				/>
+				<Boton>Crear Equipo</Boton>
 			</form>
 		</section>
 	);

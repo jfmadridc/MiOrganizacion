@@ -25,7 +25,7 @@
 .colaboradores {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: center;
 }
 
 .input-destaques {
@@ -39,10 +39,6 @@
 	top: 25px;
 	right: 50px;
 	cursor: pointer;
-}
-
-.input-destaques:hover {
-	content: attr(title);
 }
 
 @media screen and (max-width: 900px) {
