@@ -80,7 +80,7 @@ function App() {
 			nombre: "Christian",
 			puesto: "Owner",
 			foto: "https://github.com/christianpva.png",
-			equipo: "UX y Design",
+			equipo: "UX & Design",
 			fav: false,
 		},
 		{
@@ -161,7 +161,7 @@ function App() {
 		},
 		{
 			id: uuid(),
-			titulo: "UX y Design",
+			titulo: "UX & Design",
 			colorFondo: "#F6D7ED",
 			colorDestaques: "#DB6EBF",
 		},
