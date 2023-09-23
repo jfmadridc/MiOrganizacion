@@ -17,7 +17,7 @@ function App() {
 			nombre: "JuanF Madrid",
 			puesto: "Full Stack Developer",
 			foto: "https://github.com/jfmadridc.png",
-			equipo: "Programing",
+			equipo: "Programming",
 			fav: true,
 		},
 		{
@@ -25,7 +25,7 @@ function App() {
 			nombre: "JuanF Madrid",
 			puesto: "voluptate adipisicing consequat magna incididunt do ad excepteur nisi aute eu minim do Lorem   ",
 			foto: "https://github.com/jfmadridc.png",
-			equipo: "Programing",
+			equipo: "Programming",
 			fav: false,
 		},
 		{
@@ -33,7 +33,7 @@ function App() {
 			nombre: "JuanF Madrid",
 			puesto: "Full Stack Developer",
 			foto: "https://github.com/jfmadridc.png",
-			equipo: "Programing",
+			equipo: "Programming",
 			fav: false,
 		},
 		{
@@ -41,7 +41,7 @@ function App() {
 			nombre: "JuanF Madrid",
 			puesto: "Full Stack Developer",
 			foto: "https://github.com/jfmadridc.png",
-			equipo: "Programing",
+			equipo: "Programming",
 			fav: false,
 		},
 		{
@@ -49,7 +49,7 @@ function App() {
 			nombre: "JuanF Madrid",
 			puesto: "Full Stack Developer",
 			foto: "https://github.com/jfmadridc.png",
-			equipo: "Programing",
+			equipo: "Programming",
 			fav: false,
 		},
 		{
@@ -104,7 +104,7 @@ function App() {
 			nombre: "Christian ea laborum ex deserunt minim eu consectetur irure",
 			puesto: "Owner  ",
 			foto: "https://github.com/christianpva.png",
-			equipo: "Programing",
+			equipo: "Programming",
 			fav: false,
 		},
 
@@ -137,7 +137,7 @@ function App() {
 	const [equipos, actulizarEquipos] = useState([
 		{
 			id: uuid(),
-			titulo: "Programing",
+			titulo: "Programming",
 			colorFondo: "#D9F7E9",
 			colorDestaques: "#57C278",
 		},
