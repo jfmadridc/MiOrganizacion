@@ -1,9 +1,10 @@
 .div-footer {
 	display: flex;
 	justify-content: center;
+	margin-top: auto;
 	background-color: #6278f7;
-	min-height: 150px;
-	height: 150px;
+	min-height: 120px;
+	height: 120px;
 	padding: 0 50px;
 	background-repeat: no-repeat;
 	/* background-image: url("../../../public/img/footer.png"); */
@@ -69,8 +70,8 @@
 
 	.div-footer {
 		padding: 0 15px;
-		height: 100px;
-		min-height: 100px;
+		height: 80px;
+		min-height: 80px;
 	}
 
 	.footer strong {
