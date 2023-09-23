@@ -28,7 +28,7 @@ const Equipo = (props) => {
 							className="input-destaques"
 							type="color"
 							value={colorDestaques}
-							title="Cambiar Color"
+							title="Change Color"
 							onChange={(evento) => {
 								actualizarColorDestaque(evento.target.value, id);
 							}}

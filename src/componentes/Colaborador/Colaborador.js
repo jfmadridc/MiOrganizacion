@@ -12,13 +12,22 @@ const Colaborador = (props) => {
 				src="/img/Delete.png"
 				onClick={() => eliminarColaborador(id)}
 				alt="boton eliminar colaborador"
-				title="Eliminar Colaborador"
+				title="Delete Member"
 			/>
 
 			{fav ? (
-				<AiFillHeart className="corazon-lleno" color="red" onClick={() => like(id)} />
+				<AiFillHeart
+					className="corazon-lleno"
+					title="Unlike Member"
+					color="red"
+					onClick={() => like(id)}
+				/>
 			) : (
-				<AiOutlineHeart className="corazon-vacio" onClick={() => like(id)} />
+				<AiOutlineHeart
+					className="corazon-vacio"
+					title="Like Member"
+					onClick={() => like(id)}
+				/>
 			)}
 
 			<div className="encabezado" style={{ backgroundColor: colorEncabezado }}></div>

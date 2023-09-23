@@ -43,24 +43,24 @@ const Formulario = (props) => {
 	return (
 		<section className="formulario">
 			<form onSubmit={manejarEnvioCola} className="form-cola">
-				<h2>Crear el colaborador.</h2>
+				<h2>Create Member</h2>
 				<Campo
-					titulo="Nombre"
-					placeholder="Ingrese el nombre"
+					titulo="Name"
+					placeholder="Enter the name"
 					isRequired={true}
 					valor={nombre}
 					setValor={actualizarNombre}
 				/>
 				<Campo
-					titulo="Puesto"
-					placeholder="Ingrese el puesto"
+					titulo="Position"
+					placeholder="Enter the position"
 					isRequired
 					valor={puesto}
 					setValor={actualizarPuesto}
 				/>
 				<Campo
-					titulo="Foto"
-					placeholder="Url foto cuadrada"
+					titulo="Picture"
+					placeholder="Url of square pic"
 					isRequired
 					valor={foto}
 					setValor={actualizarFoto}
@@ -68,14 +68,14 @@ const Formulario = (props) => {
 
 				<ListaOpciones valor={equipo} setValor={actualizarEquipo} equipos={props.equipos} />
 
-				<Boton>Crear Colaborador</Boton>
+				<Boton>Add Member</Boton>
 			</form>
 
 			<form onSubmit={manejarEnvioEquipo} className="form-equipo">
-				<h2>Crear equipo.</h2>
+				<h2>Create Team</h2>
 				<Campo
-					titulo="Titulo"
-					placeholder="Ingrese el titulo"
+					titulo="Team Name"
+					placeholder="Enter the team name"
 					isRequired={true}
 					valor={titulo}
 					setValor={actualizarTitulo}
@@ -88,7 +88,7 @@ const Formulario = (props) => {
 					setValor={actualizarColor}
 					tipo="color"
 				/>
-				<Boton>Crear Equipo</Boton>
+				<Boton>Add Team</Boton>
 			</form>
 		</section>
 	);

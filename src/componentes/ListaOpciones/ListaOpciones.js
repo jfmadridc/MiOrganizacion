@@ -11,10 +11,10 @@ const ListaOpciones = (props) => {
 
 	return (
 		<div className="lista-opciones">
-			<label>Equipo</label>
+			<label>Team</label>
 			<select value={props.valor} onChange={manejarCambio} required>
 				<option value="" disabled defaultValue="" hidden>
-					Seleccionar Equipo
+					Select the team...
 				</option>
 				{props.equipos.map((equipo, index) => (
 					<option key={index} value={equipo}>

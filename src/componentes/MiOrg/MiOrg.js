@@ -7,14 +7,14 @@ const MiOrg = (props) => {
 				<img
 					src="/img/Delete.png"
 					alt="boton eliminar organizacion"
-					title="Eliminar Organizacion"
+					title="Delete Organization"
 					onClick={props.eliminarTodo}
 				/>
-				<h3 className="title">Mi Organización</h3>
+				<h3 className="title">My Organization</h3>
 				<img
 					src="/img/add.png"
 					alt="boton agregar"
-					title="Agregar Colaborador"
+					title="Show Forms"
 					onClick={props.switchMostrar}
 				/>
 			</section>

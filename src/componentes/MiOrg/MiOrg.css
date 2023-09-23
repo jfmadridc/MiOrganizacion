@@ -26,10 +26,6 @@
 	cursor: pointer;
 }
 
-/* .orgSection img:hover {
-	content: attr(title);
-} */
-
 @media screen and (max-width: 768px) {
 	.orgSection {
 		width: 95%;
