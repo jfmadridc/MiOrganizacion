@@ -1,15 +1,15 @@
-# Mi Organizacion
+# My Organization
 
-Mi Org es una app que te permite organizar los miembros de una empresa o grupo de trabajo en diferentes equipos.
+My Org is an app that allows you to organize the members of a company or work group into different teams.
 
-## Funcionalidades
+## Features
 
--   Agregar colaboradores
--   Agregar la foto y puesto de cada colaborador
--   Asignar colaboradores una lista de equipos predeterminados
--   Crear equipos personalizados y aignarles un color a eleccion
--   Eliminar algunos o todos ocolaboradores
--   Cambiar color de Destaques y fondo de cada equipo
--   Marcar con me gusta/corazones colaboradores en especifico
+- Add collaborators
+- Add the photo and position of each collaborator
+- Assign collaborators a list of default teams
+- Create custom teams and assign them a color of your choice
+- Delete some or all of your collaborators
+- Change color of Highlights and background of each team
+- Mark specific collaborators with likes/hearts
 
-### Desarrollada con React por JuanF Madrid
+### Developed with React by JuanF Madrid
